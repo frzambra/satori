@@ -193,6 +193,10 @@ Metabolítos más importantes
 
 ## Prototipo plataforma web ![](img/logo_satori.png){width=10%}
 
+[SatOri](https://jbkunst.shinyapps.io/satori/)
+
+![](img/plataforma.png){fig-align='center'}
+
 ## Proyecciones Futuras {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
 
 * Finalizar proyecto en noviembre 2024 con prototipo de plataforma web finalizada.
