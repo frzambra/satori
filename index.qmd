@@ -4,7 +4,6 @@ subtitle: "![](img/logo_satori.png){width=20%} <br> Sistema Satelital para la Op
 format: 
   revealjs:
     slide-number: true
-    slide-tone: true
 logo: img/logo_hemera_2024.png
 css: logo.css
 ---
