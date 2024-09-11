@@ -1,0 +1,211 @@
+---
+title: "Proyecto FONDEF <br> ID21|10297"
+subtitle: "![](img/logo_satori.png){width=20%} <br> Sistema Satelital para la Optimización de Riego"
+format: 
+  revealjs:
+    slide-number: true
+    slide-tone: true
+logo: img/logo_hemera_2024.png
+css: logo.css
+---
+
+# Resumen General 
+
+## Objetivo General {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+Desarrollar un **prototipo de servicio web** para la optimización del riego en cerezo (SatOri) que permita a los productores `ajustar los tiempos y volúmenes de riego`, basado en las relaciones en distintas longitudes de onda de datos públicos obtenidos de `satélites` con sensores `ópticos` y de `radar`; y ensayos de `riego deficitario controlado` (RDC).
+
+## Objetivos Específicos {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+::: incremental
+1.  Determinar el nivel de **`riego óptimo`** mediante la implementación de estudios de riego deficitario controlado (RDC) en huertos y de cerezo (una variedad cada uno) ubicados en la región de O'Higgins, para las temporadas `2022-2023`.
+
+2.  Desarrollar un `modelo` para estimar el `potencial hídrico xilemático` ($\Psi_m$) en `cerezo` utilizando  variables meteorológicas y de satélite.
+
+3.  `Validar` el nivel de `riego óptimo` determinado en el objetivo 1 y el `modelo` espacial de estado hídrico del objetivo 2 durante la temporada `2023-2024`.
+
+4.  Desarrollar un `prototipo de plataforma web` en el cual se implemente el modelo de estimación de $\Psi_s$ y que entregue información de las `frecuencias`, `tiempos` y `cantidad de agua` a aplicar en el riego.
+:::
+
+## Idea del proyecto. {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+![](img/metodo3.png)
+
+## Área de Estudio {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+![](img/area_de_estudio.png){fig-align='center'}
+
+## Mediciones {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+::: {.columns}
+::: {.column width=50%}
+**Parámetros Fisiológicos**   
+
+* Potencial Hídrico Xilemático ($\Psi_s$)  
+* Fluorescencia  
+* Potencial de turgor  
+* Índice de Área Foliar  
+* Curva Presión Volumen  
+* Variables meteorológicas  
+  + Temperatura  
+  + Humedad relativa  
+  + Déficit de Presion de Vapor (DPV)  
+  + Evapotranspiración de referencia (ET0)  
+:::
+::: {.column width=50%}
+**Variables Satelitales (Sentinel-2)**
+
+* Indices de vegetación en la región VNIR/SWIR (16 índices)
+* Parámetros biofísicos:
+  + Índice de Área Foliar
+  + Contenido de clorofila en la hoja
+  + fAPAR
+  + Fracción de Cubierta Vegetal
+  + Contenido de Agua en la Canopia
+:::
+:::
+
+## Clima {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+![](img/series_clima.png){fig-align='center'}
+
+
+# Resultados 
+
+## Uso de Agua {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+**Lamina de Agua Acumulada**
+
+![](img/riego_lamina.png)
+
+## Uso de Agua {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+**Volumen de Agua Total Aplicado**
+
+![](img/tabla_volumen_agua.png)
+
+## Curva Presión-Volumen {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+![](img/tlp.png)
+
+## Curva Presión-Volumen {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+![](img/tlp_la_esperanza_T0_1.png)
+
+## Curva Presión-Volumen {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+![](img/tlp_sitios.png)
+
+
+## Parámetros Fisiológicos {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+**Potencial Hídrico Xilemático ($\Psi_s$)**
+
+![](img/potencial_dia.png)
+
+## Parámetros Fisiológicos {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+**Fluorescencia ($\Phi_{P0}$)**
+
+![](img/fluorescencia.png)
+
+## Parámetros Fisiológicos {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+**Índice de Área Foliar (LAI)**
+
+![](img/lai.png)
+
+## Producción y Calidad {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+**Rendimiento (ton/ha)**
+
+![](img/rendimiento.png){fig-align='center'}
+
+## Producción y Calidad {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+**Calibre (mm)**
+
+![](img/calibre.png){fig-align='center'}
+
+## Metabolómica {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+**Perfil Metabolómico**
+
+![](img/Heatmap_RC_24.png)
+
+## Metabolómica {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+**Análisis de rutas metabólicas**
+
+![](img/via_metabol_t0vst3_rc.png){fig-align='center'}
+
+## Metabolómica {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+**Modelado de rendimiento basado en perfil metabolómico**
+
+![](img/rendimiento_metabolitos.png)
+
+## Metabolómica {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+**Modelado de rendimiento basado en perfil metabolómico**
+
+Metabolítos más importantes 
+
+![](img/importancia_metabolitos.png){width=50% fig-align="center"}
+
+## Metabolómica {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+**Modelado de calibre  basado en perfil metabolómico**
+
+![](img/calibre_metabolitos.png){fig-align='center'}
+
+## Metabolómica {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+**Modelado de calibre  basado en perfil metabolómico**
+
+Metabolítos más importantes 
+
+![](img/importancia_metabolitos_calibre.png){fig-align='center'}
+
+
+## Modelo Estimación $\Psi_s$ {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+**Predicho vs observado**
+
+![](img/pred_vs_obser_models_group_split_over.png){fig-align='center'} 
+ 
+## Modelo Estimación $\Psi_s$ {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+**Importancia de las variables**
+
+![](img/var_importance.png){fig-align='center'}
+
+## Modelo Estimación $\Psi_s$ {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+**$\Psi_s$ estimado por el modelo en La Esperanza**
+
+![](img/la_esperanza_swp_estimado_max_cov.png){fig-align='center'}
+
+## Modelo Estimación $\Psi_s$ {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+**$\Psi_s$ estimado por el modelo en Rio Claro**
+
+![](img/rio_claro_swp_estimado_max_cov.png){fig-align='center'}
+
+## Prototipo plataforma web ![](img/logo_satori.png){width=10%}
+
+## Proyecciones Futuras {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+
+* Finalizar proyecto en noviembre 2024 con prototipo de plataforma web finalizada.
+
+* Enviar artículo científico sobre la predicción de $\Psi_p$ para publicación a journal "International Journal of Applied Earth Observation and Geoinformation" (Octubre 2024)
+
+* Postular a proyecto FONDEF tecnológico con el objetivo de escalar y validar solución (Octubre-Diciembre).
+
+* Presentar resultados en congresos internacionales y nacionales
+
+* Preparar artículo científico con los resultados fisiológicos
+
+
+
+ 
