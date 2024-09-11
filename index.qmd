@@ -4,9 +4,12 @@ subtitle: "![](img/logo_satori.png){width=20%} <br> Sistema Satelital para la Op
 format: 
   revealjs:
     slide-number: true
+    footer: "slides: [https://francisco-zambrano.cl/satori/](https://francisco-zambrano.cl/satori/)"
 logo: img/logo_hemera_2024.png
 css: logo.css
 ---
+
+# {background-image="img/heyitscaleb-caleb.gif" background-size="contain"}
 
 # Resumen General 
 
@@ -209,6 +212,6 @@ Metabolítos más importantes
 
 * Preparar artículo científico con los resultados fisiológicos
 
-
+# {background-image="img/hahaha-thats-all-folks.gif" background-position='contain'}
 
  
