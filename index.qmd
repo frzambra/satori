@@ -196,15 +196,15 @@ Desarrollar un **prototipo de servicio web** para la optimización del riego en 
 
 ## Web ![](img/logo_satori.png){width=10%}{.small}
 
-[s4tori.cl](https://s4tori.cl)
+[s4tori.cl](https://s4tori.cl)(En desarrollo)
 
-[Aplicación de riego](https://jbkunst.shinyapps.io/satori/)
+[Aplicación de riego](https://jbkunst.shinyapps.io/satori/)(En desarrollo)
 
 ![](img/plataforma.png){fig-align='center'}
 
 ## Proyecciones Futuras {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
 
-* Someter artículo científico sobre la predicción de $\Psi_p$ para publicación a journal "Agricultural Water Management" (Octubre 2024)
+* Someter artículo científico sobre la predicción de $\Psi_s$ para publicación a journal "Agricultural Water Management" (Octubre 2024)
 
 * Finalizar proyecto en noviembre 2024 con prototipo de plataforma web finalizada.
 
