@@ -8,7 +8,7 @@
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.555">
+  <meta name="generator" content="quarto-1.5.56">
 
   <title>Proyecto FONDEF   ID21|10297</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -333,11 +333,6 @@
 </div>
 
 </section>
-<section id="section" class="title-slide slide level1 center" data-background-image="img/heyitscaleb-caleb.gif" data-background-size="contain">
-<h1></h1>
-
-</section>
-
 <section>
 <section id="resumen-general" class="title-slide slide level1 center">
 <h1>Resumen General</h1>
@@ -351,8 +346,8 @@
 <h2>Objetivos Específicos</h2>
 <div>
 <ol type="1">
-<li class="fragment"><p>Determinar el nivel de <strong><code>riego óptimo</code></strong> mediante la implementación de estudios de riego deficitario controlado (RDC) en huertos y de cerezo (una variedad cada uno) ubicados en la región de O’Higgins, para las temporadas <code>2022-2023</code>.</p></li>
-<li class="fragment"><p>Desarrollar un <code>modelo</code> para estimar el <code>potencial hídrico xilemático</code> (<span class="math inline">\(\Psi_m\)</span>) en <code>cerezo</code> utilizando variables meteorológicas y de satélite.</p></li>
+<li class="fragment"><p>Determinar el nivel de <strong><code>riego óptimo</code></strong> mediante la implementación de estudios de riego deficitario controlado (RDC) en huertos de cerezo ubicados en la región de O’Higgins, para las temporadas <code>2022-2023</code>.</p></li>
+<li class="fragment"><p>Desarrollar un <code>modelo</code> para estimar el <code>potencial hídrico xilemático</code> (<span class="math inline">\(\Psi_s\)</span>) en <code>cerezo</code> utilizando variables meteorológicas y de satélite.</p></li>
 <li class="fragment"><p><code>Validar</code> el nivel de <code>riego óptimo</code> determinado en el objetivo 1 y el <code>modelo</code> espacial de estado hídrico del objetivo 2 durante la temporada <code>2023-2024</code>.</p></li>
 <li class="fragment"><p>Desarrollar un <code>prototipo de plataforma web</code> en el cual se implemente el modelo de estimación de <span class="math inline">\(\Psi_s\)</span> y que entregue información de las <code>frecuencias</code>, <code>tiempos</code> y <code>cantidad de agua</code> a aplicar en el riego.</p></li>
 </ol>
@@ -380,9 +375,9 @@
 </li>
 <li>Índice de Área Foliar<br>
 </li>
-<li>Curva Presión Volumen<br>
-</li>
-<li>Variables meteorológicas
+<li>Curva Presión Volumen</li>
+</ul>
+<p><strong>Variables meteorológicas</strong></p>
 <ul>
 <li>Temperatura<br>
 </li>
@@ -392,7 +387,6 @@
 </li>
 <li>Evapotranspiración de referencia (ET0)<br>
 </li>
-</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><strong>Variables Satelitales (Sentinel-2)</strong></p>
@@ -407,8 +401,7 @@
 <li>Contenido de Agua en la Canopia</li>
 </ul></li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="clima" class="slide level2 smaller" data-background-image="img/logo_satori.png" data-background-position="97.5% 2.5%" data-background-size="7.5%" data-layout="true">
 <h2>Clima</h2>
@@ -428,19 +421,13 @@
 <h2>Uso de Agua</h2>
 <p><strong>Volumen de Agua Total Aplicado</strong></p>
 
+<!-- ## Curva Presión-Volumen {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"} -->
+<!-- ![](img/tlp.png) -->
+<!-- ## Curva Presión-Volumen {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"} -->
+<!-- ![](img/tlp_la_esperanza_T0_1.png) -->
+<!-- ## Curva Presión-Volumen {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"} -->
+<!-- ![](img/tlp_sitios.png) -->
 <img data-src="img/tabla_volumen_agua.png" class="r-stretch"></section>
-<section id="curva-presión-volumen" class="slide level2 smaller" data-background-image="img/logo_satori.png" data-background-position="97.5% 2.5%" data-background-size="7.5%" data-layout="true">
-<h2>Curva Presión-Volumen</h2>
-
-<img data-src="img/tlp.png" class="r-stretch"></section>
-<section id="curva-presión-volumen-1" class="slide level2 smaller" data-background-image="img/logo_satori.png" data-background-position="97.5% 2.5%" data-background-size="7.5%" data-layout="true">
-<h2>Curva Presión-Volumen</h2>
-
-<img data-src="img/tlp_la_esperanza_T0_1.png" class="r-stretch"></section>
-<section id="curva-presión-volumen-2" class="slide level2 smaller" data-background-image="img/logo_satori.png" data-background-position="97.5% 2.5%" data-background-size="7.5%" data-layout="true">
-<h2>Curva Presión-Volumen</h2>
-
-<img data-src="img/tlp_sitios.png" class="r-stretch"></section>
 <section id="parámetros-fisiológicos" class="slide level2 smaller" data-background-image="img/logo_satori.png" data-background-position="97.5% 2.5%" data-background-size="7.5%" data-layout="true">
 <h2>Parámetros Fisiológicos</h2>
 <p><strong>Potencial Hídrico Xilemático (<span class="math inline">\(\Psi_s\)</span>)</strong></p>
@@ -465,44 +452,32 @@
 <h2>Producción y Calidad</h2>
 <p><strong>Calibre (mm)</strong></p>
 
+<!-- ## Metabolómica {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"} -->
+<!-- **Perfil Metabolómico** -->
+<!-- ![](img/Heatmap_RC_24.png) -->
+<!-- ## Metabolómica {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"} -->
+<!-- **Análisis de rutas metabólicas** -->
+<!-- ![](img/via_metabol_t0vst3_rc.png){fig-align='center'} -->
+<!-- ## Metabolómica {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"} -->
+<!-- **Modelado de rendimiento basado en perfil metabolómico** -->
+<!-- ![](img/rendimiento_metabolitos.png) -->
+<!-- ## Metabolómica {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"} -->
+<!-- **Modelado de rendimiento basado en perfil metabolómico** -->
+<!-- Metabolítos más importantes  -->
+<!-- ![](img/importancia_metabolitos.png){width=50% fig-align="center"} -->
+<!-- ## Metabolómica {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"} -->
+<!-- **Modelado de calibre  basado en perfil metabolómico** -->
+<!-- ![](img/calibre_metabolitos.png){fig-align='center'} -->
+<!-- ## Metabolómica {.smaller background-image="img/logo_satori.png" background-position="97.5% 2.5%" background-size="7.5%" layout="true"} -->
+<!-- **Modelado de calibre  basado en perfil metabolómico** -->
+<!-- Metabolítos más importantes  -->
+<!-- ![](img/importancia_metabolitos_calibre.png){fig-align='center'} -->
 <img data-src="img/calibre.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="metabolómica" class="slide level2 smaller" data-background-image="img/logo_satori.png" data-background-position="97.5% 2.5%" data-background-size="7.5%" data-layout="true">
-<h2>Metabolómica</h2>
-<p><strong>Perfil Metabolómico</strong></p>
-
-<img data-src="img/Heatmap_RC_24.png" class="r-stretch"></section>
-<section id="metabolómica-1" class="slide level2 smaller" data-background-image="img/logo_satori.png" data-background-position="97.5% 2.5%" data-background-size="7.5%" data-layout="true">
-<h2>Metabolómica</h2>
-<p><strong>Análisis de rutas metabólicas</strong></p>
-
-<img data-src="img/via_metabol_t0vst3_rc.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="metabolómica-2" class="slide level2 smaller" data-background-image="img/logo_satori.png" data-background-position="97.5% 2.5%" data-background-size="7.5%" data-layout="true">
-<h2>Metabolómica</h2>
-<p><strong>Modelado de rendimiento basado en perfil metabolómico</strong></p>
-
-<img data-src="img/rendimiento_metabolitos.png" class="r-stretch"></section>
-<section id="metabolómica-3" class="slide level2 smaller" data-background-image="img/logo_satori.png" data-background-position="97.5% 2.5%" data-background-size="7.5%" data-layout="true">
-<h2>Metabolómica</h2>
-<p><strong>Modelado de rendimiento basado en perfil metabolómico</strong></p>
-<p>Metabolítos más importantes</p>
-
-<img data-src="img/importancia_metabolitos.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"></section>
-<section id="metabolómica-4" class="slide level2 smaller" data-background-image="img/logo_satori.png" data-background-position="97.5% 2.5%" data-background-size="7.5%" data-layout="true">
-<h2>Metabolómica</h2>
-<p><strong>Modelado de calibre basado en perfil metabolómico</strong></p>
-
-<img data-src="img/calibre_metabolitos.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="metabolómica-5" class="slide level2 smaller" data-background-image="img/logo_satori.png" data-background-position="97.5% 2.5%" data-background-size="7.5%" data-layout="true">
-<h2>Metabolómica</h2>
-<p><strong>Modelado de calibre basado en perfil metabolómico</strong></p>
-<p>Metabolítos más importantes</p>
-
-<img data-src="img/importancia_metabolitos_calibre.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="modelo-estimación-psi_s" class="slide level2 smaller" data-background-image="img/logo_satori.png" data-background-position="97.5% 2.5%" data-background-size="7.5%" data-layout="true">
 <h2>Modelo Estimación <span class="math inline">\(\Psi_s\)</span></h2>
 <p><strong>Predicho vs observado</strong></p>
 
-<img data-src="img/pred_vs_obser_models_group_split_over.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<img data-src="img/pred_vs_obser_models.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="modelo-estimación-psi_s-1" class="slide level2 smaller" data-background-image="img/logo_satori.png" data-background-position="97.5% 2.5%" data-background-size="7.5%" data-layout="true">
 <h2>Modelo Estimación <span class="math inline">\(\Psi_s\)</span></h2>
 <p><strong>Importancia de las variables</strong></p>
@@ -518,9 +493,10 @@
 <p><strong><span class="math inline">\(\Psi_s\)</span> estimado por el modelo en Rio Claro</strong></p>
 
 <img data-src="img/rio_claro_swp_estimado_max_cov.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="prototipo-plataforma-web" class="slide level2">
-<h2>Prototipo plataforma web <img data-src="img/logo_satori.png" style="width:10.0%"></h2>
-<p><a href="https://jbkunst.shinyapps.io/satori/">SatOri</a></p>
+<section id="web" class="slide level2 small">
+<h2>Web <img data-src="img/logo_satori.png" style="width:10.0%"></h2>
+<p><a href="https://s4tori.cl">s4tori.cl</a></p>
+<p><a href="https://jbkunst.shinyapps.io/satori/">Aplicación de riego</a></p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="img/plataforma.png" class="quarto-figure quarto-figure-center"></p>
@@ -530,14 +506,15 @@
 <section id="proyecciones-futuras" class="slide level2 smaller" data-background-image="img/logo_satori.png" data-background-position="97.5% 2.5%" data-background-size="7.5%" data-layout="true">
 <h2>Proyecciones Futuras</h2>
 <ul>
+<li><p>Someter artículo científico sobre la predicción de <span class="math inline">\(\Psi_p\)</span> para publicación a journal “Agricultural Water Management” (Octubre 2024)</p></li>
 <li><p>Finalizar proyecto en noviembre 2024 con prototipo de plataforma web finalizada.</p></li>
-<li><p>Enviar artículo científico sobre la predicción de <span class="math inline">\(\Psi_p\)</span> para publicación a journal “International Journal of Applied Earth Observation and Geoinformation” (Octubre 2024)</p></li>
-<li><p>Postular a proyecto FONDEF tecnológico con el objetivo de escalar y validar solución (Octubre-Diciembre).</p></li>
+<li><p>Difusión de los resultados durante diciembre 2024 y enero 2025.</p></li>
+<li><p>Postular a proyecto FONDEF Tecnologías Avanzadas 2025.</p></li>
 <li><p>Presentar resultados en congresos internacionales y nacionales</p></li>
-<li><p>Preparar artículo científico con los resultados fisiológicos</p></li>
+<li><p>Preparar artículo científico con los resultados de los parámteros fisiológicos</p></li>
 </ul>
 </section></section>
-<section id="section-1" class="title-slide slide level1 center" data-background-image="img/hahaha-thats-all-folks.gif" data-background-position="contain">
+<section id="section" class="title-slide slide level1 center" data-background-image="img/hahaha-thats-all-folks.gif" data-background-position="contain">
 <h1></h1>
 <div class="quarto-auto-generated-content">
 <p><img src="img/logo_hemera_2024.png" class="slide-logo"></p>
@@ -597,7 +574,7 @@
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: 'c/t',
+        slideNumber: false,
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
@@ -788,18 +765,7 @@
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -831,7 +797,29 @@
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
           var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -839,7 +827,7 @@
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
         // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
         for (var i=0; i<links.length; i++) {
           const link = links[i];
           if (!isInternal(link.href)) {
